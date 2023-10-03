@@ -1,0 +1,102 @@
+@-webkit-keyframes slideFromLeft {
+    0% {
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+        opacity: .3
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+        opacity: .3
+    }
+}
+
+@-webkit-keyframes slideFromRight {
+    0% {
+        -webkit-transform: translate(100%);
+        transform: translate(100%);
+        opacity: .3
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        -webkit-transform: translate(100%);
+        transform: translate(100%);
+        opacity: .3
+    }
+}
+
+@-webkit-keyframes animateAll {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+}
+
+@keyframes animateAll {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+}
+
+@-webkit-keyframes animateH1 {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%)
+    }
+}
+
+@keyframes animateH1 {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%)
+    }
+}
+
+@-webkit-keyframes animateIMG {
+    0% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
+}
+
+@keyframes animateIMG {
+    0% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
+}
+
+.slideFromLeft {
+    -webkit-animation: slideFromLeft 1s ease-in-out;
+    animation: slideFromLeft 1s ease-in-out
+}
+
+.slideFromRight {
+    -webkit-animation: slideFromRight 1s ease-in-out;
+    animation: slideFromRight 1s ease-in-out
+}
+
+.animateAll {
+    -webkit-animation: animateAll .8s linear;
+    animation: animateAll .8s linear;
+    display: block;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s
+}
+
+.animateH1,.animateIMG {
+    -webkit-animation: animateH1 .8s linear;
+    animation: animateH1 .8s linear;
+    position: relative
+}
+
+.animateIMG {
+    -webkit-animation: animateIMG .8s linear;
+    animation: animateIMG .8s linear
+}
